@@ -12,4 +12,6 @@ const userSchema = {
     additionalProperties:false,
 }
 
-export default ajv.compile(userSchema);
+const userValidate = ajv.compile(userSchema)
+
+export default userValidate;

@@ -1,6 +1,7 @@
 import { Router } from "express";
 import routeAdapter from "../interfaces/routes.interface";
 import UserController from "../controllers/user.controller";
+import userValidate from "../schemas/user.schema";
 
 class UserRoute implements routeAdapter {
   public path = "/auth";
